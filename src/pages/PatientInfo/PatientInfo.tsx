@@ -3,6 +3,7 @@ import * as Yup from "yup";
 import {Form, Formik} from "formik";
 import {FormikAutoComplete, FormikDropDownList, FormikMultiSelect} from "../../components/common/dropdown/DropdownInput";
 import {FormikDatePicker} from "../../components/common/dateInput/DateInput";
+import {FileUploadComponent} from "../../components/common/FileUploadComponent";
 
 const PatientInfo: React.FC = () => {
     const sports = [
@@ -38,6 +39,7 @@ const PatientInfo: React.FC = () => {
           >
               {() => (
                   <Form>
+                      <FileUploadComponent />
                       <FormikAutoComplete name="autoComplete" data={sports} placeholder="Your favorite sport"/>
                       <FormikDropDownList name="dropDownList" data={sports} placeholder="Your favorite sport"/>
                       <FormikMultiSelect name="multiSelect" data={sports} placeholder="Your favorite sport"/>
