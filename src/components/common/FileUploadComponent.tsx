@@ -87,7 +87,7 @@ export const FileUploadComponent: React.FC = () => {
                         style={{ display: 'none' }}
                         id="fileInput"
                     />
-                    <label htmlFor="fileInput" className="k-button k-primary">
+                    <label htmlFor="fileInput" className="btn btn-primary">
                         Thêm tệp
                     </label>
                 </div>
